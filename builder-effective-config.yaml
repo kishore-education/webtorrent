@@ -1,0 +1,19 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.example.webtorrent
+productName: WebTorrent
+files:
+  - filter:
+      - build/**/*
+      - node_modules/**/*
+      - package.json
+mac:
+  category: public.app-category.utilities
+win:
+  target: nsis
+linux:
+  target:
+    - AppImage
+    - deb
+electronVersion: 27.3.11
